@@ -1,0 +1,243 @@
+{% load static%}
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>David Cabezas - Ingeniero en Software</title>
+    <link rel="icon" type="image/x-icon" href="./Images/favicon.jpeg">
+    <link rel="stylesheet" href="{%static 'css/style.css'%}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Seccion de navbar -->
+    <nav id="navbar" class="flex s-around bg-color">
+        <div class="left-nav">
+            <img src="{% static 'images/logo.png' %}" alt="logoimg" width="30%" style="margin-left: 100px; margin-top:-10px">
+
+        </div>
+        <div class="right-nav">
+            <ul class="flex">
+                <li><a href="#home" class="t-white roboto">Inicio <i class="fa-solid fa-house"></i></a></li>
+                <li><a href="#about" class="t-white roboto">Sobre Mi <i class="fa-solid fa-user"></i></a></li>
+                <li><a href="#skills" class="t-white roboto">Habilidades <i class="fa-solid fa-code"></i></a></li>
+                <li><a href="#Projects" class="t-white roboto">Proyectos <i class="fas fa-project-diagram"></i></a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <!-- Seccion de inicio -->
+    <section id="home" class="flex s-around sw-80 m-auto">
+        <div class="home-left flex items-center">
+            <div class="home-content">
+                <h6 class="poppinss">¡Hola! Soy</h6>
+                <h1 class="t-white">David Cabezas</h1>
+                <h4 class="poppinss">Ingeniero de Software</h4>
+                <a href="{% static 'pdf/David_Cabezas_CV.pdf' %}" target="_blank">
+                    <button class="btn poppins">Curriculum</button></a>
+
+                <a class="btn live poppins" id="hireme" href="mailto:david.cabezas115@gmail.com" target="_blank">Enviame un mensaje</a>
+            </div>
+        </div>
+        <div class="home-right flex s-center items-center">
+            <div class="circle flex s-center items-center" id="mainImage">
+
+                <img src="{% static 'images/david_t.png'%}" alt="self_img">
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Seccion de informacion -->
+    <section id="about">
+        <h1 class="t-center my-2 t-white f-2">Sobre Mi</h1>
+        <div class="about-container flex s-around ">
+            <div class=" about-left flex s-center items-center">
+                <img src="{%static 'images/pic2.png'%}" alt="" style="width: 50%;">
+            </div>
+
+            <div class="about-right flex">
+                <div class="about-content">
+                    <h1 class="t-white m-b-1 poppins">David Cabezas</h1>
+                    <p class="t-white poppins">
+                        Ingeniero de Software graduado de la
+                        <strong>Escuela Superior Politécnica de Chimborazo</strong>.
+                        Me apasiona el desarrollo backend y la creación de soluciones sólidas, seguras y bien
+                        estructuradas.
+                        Estoy en constante aprendizaje y busco oportunidades donde pueda seguir creciendo
+                        profesionalmente,
+                        aportar mi conocimiento en <strong>Django, Python</strong> y otras tecnologías modernas.
+                    </p>
+
+                    <a class="btn " id="hireme" href="mailto:david.cabezas115@gmail.com">Contactame</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seccion de habilidades -->
+    <section id="skills">
+        <h1 class="t-center my-2 t-white f-2">Habilidades</h1>
+
+        <div class="skills-container flex s-around h-50">
+            <div class="skills-left flex s-center items-center">
+                <img src="{% static 'images/skills.png' %}" alt="Skills" style="width: 50%;">
+            </div>
+
+            <div class="skills-right flex items-center">
+                <div class="skills-list t-white">
+
+                    <!-- Lenguajes -->
+                    <div class="skill-category my-2">
+                        <h2 class="f-1-5 skill-title">Lenguajes de Programación</h2>
+                        <ul class="skill-items">
+                            <li><i class="devicon-python-plain colored"></i> Python</li>
+                            <li><i class="devicon-javascript-plain colored"></i> JavaScript</li>
+                            <li><i class="devicon-java-plain colored"></i> Java</li>
+                            <li><i class="devicon-html5-plain colored"></i> HTML</li>
+                            <li><i class="devicon-css3-plain colored"></i> CSS</li>
+                            <li><i class="devicon-cplusplus-plain colored"></i> C++</li>
+                            <li><i class="devicon-csharp-plain colored"></i> C#</li>
+                            <li><i class="devicon-php-plain colored"></i> PHP</li>
+                        </ul>
+                    </div>
+
+
+                    <!-- Frameworks -->
+                    <div class="skill-category my-2">
+                        <h2 class="f-1-5 skill-title">Frameworks y Librerías</h2>
+                        <ul class="skill-items">
+                            <li><i class="devicon-django-plain colored"></i> Django</li>
+                            <li><i class="devicon-react-original colored"></i> React</li>
+                            <li><i class="devicon-bootstrap-plain colored"></i> Bootstrap</li>
+                            <li><i class="devicon-nodejs-plain colored"></i> Node.js</li>
+                        </ul>
+                    </div>
+
+                    <!-- Bases de datos -->
+                    <div class="skill-category my-2">
+                        <h2 class="f-1-5 skill-title">Bases de Datos</h2>
+                        <ul class="skill-items">
+                            <li><i class="devicon-mysql-plain colored"></i> MySQL</li>
+                            <li><i class="devicon-postgresql-plain colored"></i> PostgreSQL</li>
+                            <li><i class="devicon-sqlite-plain colored"></i> SQLite</li>
+                        </ul>
+                    </div>
+
+                    <!-- Herramientas -->
+                    <div class="skill-category my-2">
+                        <h2 class="f-1-5 skill-title">Herramientas y Control de Versiones</h2>
+                        <ul class="skill-items">
+                            <li><i class="devicon-git-plain colored"></i> Git / GitHub</li>
+                            <li><i class="devicon-vscode-plain colored"></i> VS Code</li>
+                            <li><i class="devicon-postman-plain colored"></i> Postman</li>
+                            <li><i class="devicon-docker-plain colored"></i> Docker</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Seccion de proyectos -->
+    <section id="Projects">
+        <h1 class=" t-center my-2 t-white f-2">Proyectos</h1>
+        <div class="projects-container flex s-center">
+            <div class="projects-item flex f-col s-center items-center">
+
+                <h1 class="t-white poppins">SimpleCMS</h1>
+                <img src="{%static 'images/project1.png'%}" alt="" width="80%">
+                <br>
+                <p class="t-white poppins">Sistema de Gestión de Contenidos (CMS) desarrollado para pequeñas empresas
+                </p>
+                <br>
+                <p class="t-white poppins">
+                    <strong>Tecnologías Usadas:</strong> PHP, HTML, Boostrap, MySQL
+                </p>
+                <p class="t-white poppins">
+                    <strong>Funcionalidades:</strong> Gestión de usuarios, publicaciones y permisos
+                </p>
+                <div class="buttons flex s-around">
+                    <a href="https://theppzcode.com/cms-tesis/index.php" target="_blanks" class="btn mx-1 m-top">Ver Proyecto</a>
+                </div>
+            </div>
+            <div class="projects-item flex f-col s-center items-center">
+
+                <h1 class="t-white poppins">PartyConnect</h1>
+                <img src="{%static 'images/project3.png' %}" alt="" width="80%">
+                <br>
+                <p class="t-white poppins">Plataforma web desarrollada para la compra y venta de boletos para eventos
+                    sociales</p>
+                <br>
+                <p class="t-white poppins">
+                    <strong>Tecnologías Usadas:</strong> React, Django, DjangoREST, PostgreSQL
+                </p>
+                <p class="t-white poppins">
+                    <strong>Funcionalidades:</strong> Gestión de usuarios, gestión de eventos, compra y venta de boletos
+                </p>
+                <div class="buttons flex s-around">
+                    <a href="https://theppzcode.com/src/docs/Ayuda%20PartyConnect.pdf" target="_blanks" class="btn mx-1 m-top">Ver Proyecto</a>
+                </div>
+            </div>
+
+            <div class="projects-item flex f-col s-center items-center">
+
+                <h1 class="t-white poppins">EcoRuta Registro</h1>
+                <img src="{%static 'images/project2.jpg'%}" alt="" width="120%">
+                <br>
+                <p class="t-white poppins">Software de gestión vehicular desarrollado para el Ministerio de Ambiente, Agua y Transición Ecológica.</p>
+                <br>
+                <p class="t-white poppins">
+                    <strong>Tecnologías Usadas:</strong> Django, PostgreSQL.
+                </p>
+                <p class="t-white poppins">
+                    <strong>Funcionalidades:</strong> Registro de vehículos, actas y reportes personalizados.
+                </p>
+                <div class="buttons flex s-around">
+                    <a href="https://ecoruta-registro.onrender.com/" target="_blanks" class="btn mx-1 m-top">Ver Proyecto</a>
+                </div>
+            </div>
+
+        </div>
+
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer id="footer">
+        <ul class="flex s-center w-80 m-auto my-2 res">
+            <li><a href="#home" class="poppinss">Inicio</a></li>
+            <li><a href="#about" class="poppinss">Sobre Mi</a></li>
+            <li><a href="#skills" class="poppinss">Habilidades</a></li>
+            <li><a href="#projects" class="poppinss">Proyectos</a></li>
+        </ul>
+        <ul class="flex s-center w-80 font-awesome ">
+            <a href="https://www.linkedin.com/in/david-cabezas-69026032b/" target="_blank">
+                <li><i class="fa-brands fa-linkedin-in"></i></li>
+            </a>
+            <a href="https://github.com/HeyMrDave" target="_blank">
+                <li><i class="fa-brands fa-github"></i></li>
+            </a>
+            <a href="https://www.instagram.com/david1.cabezas/" target="_blank">
+                <li><i class="fa-brands fa-instagram"></i></li>
+            </a>
+
+        </ul>
+        <p class="t-center my-2 poppins">&copy; Todos los Derechos Reservados - <span class="cpy-white poppins">David
+                Cabezas
+            </span></p>
+
+    </footer>
+
+</body>
+
+</html>
