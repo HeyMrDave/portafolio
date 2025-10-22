@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>David Cabezas - Ingeniero en Software</title>
-    <link rel="icon" type="image/x-icon" href="./Images/favicon.jpeg">
+    <link rel="icon" type="image/x-icon" href="{%static 'images/logo.png'%}">
     <link rel="stylesheet" href="{%static 'css/style.css'%}">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
@@ -17,20 +17,25 @@
 <body>
 
     <!-- Seccion de navbar -->
-    <nav id="navbar" class="flex s-around bg-color">
-        <div class="left-nav">
-            <img src="{% static 'images/logo.png' %}" alt="logoimg" width="30%" style="margin-left: 100px; margin-top:-10px">
+<nav id="navbar" class="flex s-around bg-color">
+    <div class="left-nav">
+        <img src="{% static 'images/logo.png' %}" alt="logoimg" width="30%" style="margin-left: 100px; margin-top:-10px">
+    </div>
 
-        </div>
-        <div class="right-nav">
-            <ul class="flex">
-                <li><a href="#home" class="t-white roboto">Inicio <i class="fa-solid fa-house"></i></a></li>
-                <li><a href="#about" class="t-white roboto">Sobre Mi <i class="fa-solid fa-user"></i></a></li>
-                <li><a href="#skills" class="t-white roboto">Habilidades <i class="fa-solid fa-code"></i></a></li>
-                <li><a href="#Projects" class="t-white roboto">Proyectos <i class="fas fa-project-diagram"></i></a></li>
-            </ul>
-        </div>
-    </nav>
+    <!-- Botón de menú hamburguesa (solo visible en móviles) -->
+    <div class="hamburger" id="hamburger">
+        <i class="fa-solid fa-bars"></i>
+    </div>
+
+    <div class="right-nav" id="nav-menu">
+        <ul class="flex">
+            <li><a href="#home" class="t-white roboto">Inicio <i class="fa-solid fa-house"></i></a></li>
+            <li><a href="#about" class="t-white roboto">Sobre Mi <i class="fa-solid fa-user"></i></a></li>
+            <li><a href="#skills" class="t-white roboto">Habilidades <i class="fa-solid fa-code"></i></a></li>
+            <li><a href="#Projects" class="t-white roboto">Proyectos <i class="fas fa-project-diagram"></i></a></li>
+        </ul>
+    </div>
+</nav>
 
 
     <!-- Seccion de inicio -->
@@ -239,5 +244,18 @@
     </footer>
 
 </body>
+
+<script>
+    const hamburger = document.getElementById('hamburger');
+    const navMenu = document.getElementById('nav-menu');
+
+    hamburger.addEventListener('click', () => {
+        navMenu.classList.toggle('active');
+        hamburger.innerHTML = navMenu.classList.contains('active')
+            ? '<i class="fa-solid fa-xmark"></i>'
+            : '<i class="fa-solid fa-bars"></i>';
+    });
+</script>
+
 
 </html>
