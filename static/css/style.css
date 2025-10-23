@@ -824,3 +824,23 @@ ul li a:hover {
 
 
 }
+
+#skills {
+    margin-top: 0em;   /* separa del contenido anterior */
+    padding-top: 2rem;
+}
+
+#Projects {
+    margin-top: 3rem;   /* baja el título "Proyectos" */
+    padding-top: 1rem;
+}
+
+/* Opcional: mejora de alineación del título principal */
+#skills h1{
+    margin-bottom: 5.5rem;
+    text-align: center;
+}
+#Projects h1 {
+    margin-bottom: 2rem;
+    text-align: center;
+}
