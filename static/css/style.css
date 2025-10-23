@@ -95,7 +95,7 @@ h4 {
     border-radius: 84%;
     height: 150%;
 }
-    
+
 
 
 .circle {
@@ -670,9 +670,9 @@ ul li a:hover {
 
     #Projects {
         padding-top: 25rem;
-        margin-top: 0; 
+        margin-top: 0;
     }
-    
+
 
     #about, #skills {
         padding-top: 5rem;
@@ -791,7 +791,7 @@ ul li a:hover {
 
 @media (max-width: 768px) {
 
-    
+
     #home {
         flex-direction: column;
         align-items: center;
@@ -815,8 +815,8 @@ ul li a:hover {
         text-align: center;
     }
 
-    .home-left h1, 
-    .home-left h4, 
+    .home-left h1,
+    .home-left h4,
     .home-left h6 {
         text-align: center;
         margin-left: 0;
@@ -826,12 +826,12 @@ ul li a:hover {
 }
 
 #skills {
-    margin-top: -1em;   
+    margin-top: -1em;
     padding-top: 2rem;
 }
 
 #Projects {
-    margin-top: 4rem;   
+    margin-top: 4rem;
     padding-top: 1rem;
 }
 
@@ -848,11 +848,11 @@ ul li a:hover {
     #skills {
         margin-top: 2rem;
         padding-top: 2rem;
-        margin-bottom: 4rem; 
+        margin-bottom: 4rem;
     }
 
     #Projects {
-        margin-top: 36rem;  
+        margin-top: 36rem;
         padding-top: 1rem;
     }
 }
